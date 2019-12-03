@@ -1,0 +1,65 @@
+.sprite {
+    background-image: url(spritesheet.png);
+    background-repeat: no-repeat;
+    display: block;
+}
+
+.sprite-alert {
+    width: 83px;
+    height: 76px;
+    background-position: -20px -20px;
+}
+
+.sprite-check {
+    width: 31px;
+    height: 31px;
+    background-position: -143px -20px;
+}
+
+.sprite-icons {
+    width: 252px;
+    height: 52px;
+    background-position: -20px -136px;
+}
+
+.sprite-icons2 {
+    width: 33px;
+    height: 205px;
+    background-position: -312px -20px;
+}
+
+.sprite-icons3 {
+    width: 18px;
+    height: 80px;
+    background-position: -20px -265px;
+}
+
+.sprite-litex {
+    width: 29px;
+    height: 22px;
+    background-position: -214px -20px;
+}
+
+.sprite-photo {
+    width: 25px;
+    height: 19px;
+    background-position: -78px -265px;
+}
+
+.sprite-socials {
+    width: 169px;
+    height: 29px;
+    background-position: -143px -265px;
+}
+
+.sprite-socials2 {
+    width: 169px;
+    height: 29px;
+    background-position: -385px -20px;
+}
+
+.sprite-telephone {
+    width: 179px;
+    height: 119px;
+    background-position: -385px -89px;
+}

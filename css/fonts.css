@@ -34,10 +34,28 @@
 }
 @font-face {
   font-family: 'Lato';
+  src: url("../fonts/Lato/Lato-Medium.eot");
+  src: url("../fonts/Lato/Lato-Medium.eot") format("eot"), 
+  url("../fonts/Lato/Lato-Medium.woff") format("woff"), 
+  url("../fonts/Lato/Lato-Medium.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal; 
+}
+@font-face {
+  font-family: 'Lato';
   src: url("../fonts/Lato/Lato-Bold.eot");
   src: url("../fonts/Lato/Lato-Bold.eot") format("eot"), 
   url("../fonts/Lato/Lato-Bold.woff") format("woff"), 
   url("../fonts/Lato/Lato-Bold.ttf") format("truetype");
   font-weight: 700;
+  font-style: normal; 
+}
+@font-face {
+  font-family: 'Lato';
+  src: url("../fonts/Lato/Lato-Black.eot");
+  src: url("../fonts/Lato/Lato-Black.eot") format("eot"), 
+  url("../fonts/Lato/Lato-Black.woff") format("woff"), 
+  url("../fonts/Lato/Lato-Black.ttf") format("truetype");
+  font-weight: 900;
   font-style: normal; 
 }

@@ -25,7 +25,6 @@ $(document).ready(function(){
     autoplay: true,
     autoplaySpeed: 6000,
     arrows: false,
-    dots: true,
     draggable: false
   });
 
