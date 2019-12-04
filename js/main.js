@@ -18,13 +18,22 @@ $(document).ready(function(){
     $(".popup").removeClass("popup--show");
   });
 
+  $(".label").click(function(){
+    $(this).find(".label__placeholder").hide();
+  });
+  $(".input").focusout(function(){
+    if (($(this).val() == "") || !(/(.*\d.*){11}/.test($(this).val()))) {
+      $(this).parent(".label").find(".label__placeholder").show();
+    }
+  });
+
 
 
   $(".js-slider").slick({
     infinite: true,
     autoplay: true,
     autoplaySpeed: 6000,
-    arrows: false,
+    arrows: true,
     draggable: false
   });
 
