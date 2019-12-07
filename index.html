@@ -13,9 +13,13 @@
     <header class="header">
       <div class="wrapper">
         <div class="header-top flex">
-          <a href="" class="logo"><img src="images/logo.png" alt=""></a>
-          <span class="description">Проектирование и строительство 
+          <div class="logo__container flex">
+            <a href="" class="logo"><img src="images/logo.png" alt=""></a>
+            <span class="description">Проектирование и строительство 
               деревянных домов под ключ</span>
+            <div class="mobile-div"></div>
+            <span class="mobile__office js-office"></span>
+          </div>
           <div class="socials flex">
             <a href="" class="socials__item socials__item--vk"></a>
             <a href="" class="socials__item socials__item--fb"></a>
@@ -23,14 +27,16 @@
             <a href="" class="socials__item socials__item--tel"></a>
             <a href="" class="socials__item socials__item--wa"></a>
           </div>
-          <span class="header__btn">ЗАДАТЬ ВОПРОС</span>
+          <span class="header__btn js-getcall">ЗАДАТЬ ВОПРОС</span>
           <div class="header__contacts">
             <a href="tel:8 800 350-38-31" class="header__phone">8 800 350-38-31</a>
             <span>Ежедневно с 9:00 до 21:00</span>
           </div>
         </div>
+        <div class="butter"><i></i>Меню сайта</div>
 
         <div class="menu flex">
+          <div class="menu-close"></div>
           <nav class="menu__container flex">
             <span class="menu__item">
               <a href="" class="menu__item_link">Главная</a>
@@ -40,6 +46,7 @@
             </span>
             <span class="menu__item menu__item--with-drop1">
               <a href="" class="menu__item_link">Проекты и цены</a>
+              <span class="menu__item_arrow"></span>
               <div class="menu__drop menu__drop1">
                 <div class="menu__drop_block">
                   <strong class="menu__drop_title">ДОМА:</strong>
@@ -81,7 +88,8 @@
               <a href="" class="menu__item_link">Отзывы</a>
             </span>
             <span class="menu__item menu__item--with-drop2">
-              <a href="" class="menu__item_link">ИНФОРМАЦИЯ</a>
+              <a href="" class="menu__item_link">Информация</a>              
+              <span class="menu__item_arrow"></span>
               <div class="menu__drop menu__drop2">
                 <ul>
                   <li><a href="">О компании</a></li>
@@ -95,7 +103,7 @@
               <a href="" class="menu__item_link">Контакты</a>
             </span>
           </nav>
-          <span class="menu__office">МОБИЛЬНЫЙ ОФИС</span>
+          <span class="menu__office  js-office">МОБИЛЬНЫЙ ОФИС</span>
         </div>
       </div>
     </header>
@@ -106,6 +114,7 @@
           <div class="plash__container js-slider">
             <div class="plash__item">
               <div class="plash__item_container">
+                <img src="images/fon.jpg" alt="" class="plash__item_img">
                 <div class="plash__item--left">
                   <h2 class="plash__item_title">Строим дома и бани
                       из оцилиндрованного
@@ -131,6 +140,7 @@
 
             <div class="plash__item">
               <div class="plash__item_container">
+                <img src="images/fon.jpg" alt="" class="plash__item_img">
                 <div class="plash__item--left">
                   <h2 class="plash__item_title">Строим дома и бани
                       из оцилиндрованного
@@ -287,6 +297,11 @@
           </div>
           <div class="quests__form">
             <form class="quests__form_block">
+               <!-- Hidden Required Fields -->
+              <input type="hidden" name="project_name" value="Stolica">
+              <input type="hidden" name="admin_email" value="mail@yandex.ru">
+              <input type="hidden" name="form_subject" value="Заявка с сайта">
+              <!-- END Hidden Required Fields -->
               <span class="form__title">Задайте нам свой вопрос!</span>
               <span class="form__subtitle">Мы перезвоним в ближайшее время.</span>
               <label class="label">
@@ -323,10 +338,60 @@
         </div>
       </div>
     </section>
+  
   </main>
 
   <footer class="footer">
-
+    <div class="wrapper">
+      <div class="footer__wrapper">
+        <div class="footer__contacts">
+          <a href="tel:8 800 350-38-31" class="footer__phone">8 800 350-38-31</a>
+          <span class="footer__span footer__span_email">Для писем: <a href="mailto:stolitsa12@mail.ru">stolitsa12@mail.ru</a></span>
+          <span class="footer__span footer__span_address">г. Йошкар-Ола, ул. б-р Победы, д.5</span>
+          <span class="copyright">© 2015-2019, ООО «Столица»</span>
+        </div>
+        <div class="footer__menu">
+          <div class="footer__menu_block">
+            <strong class="footer__menu_title">КАТАЛОГ:</strong>
+            <ul>
+              <li><a href="">Дома из оцилиндрованного бревна</a></li>
+              <li><a href="">Дома из клееного бруса</a></li>
+              <li><a href="">Дома из рубленого бревна</a></li>
+              <li><a href="">Бани из бревна и бруса</a></li>
+            </ul>
+          </div>
+          <div class="footer__menu_block">
+            <strong class="footer__menu_title">КОМПАНИЯ:</strong>
+            <ul>
+              <li><a href="">О нас</a></li>
+              <li><a href="">Производство</a></li>
+              <li><a href="">Отзывы</a></li>
+              <li><a href="">Наши работы</a></li>
+              <li><a href="">Контакты</a></li>
+            </ul>
+          </div>
+          <div class="footer__menu_block">
+            <strong class="footer__menu_title">УСЛУГИ:</strong>
+            <ul>
+              <li><a href="">Проектирование</a></li>
+              <li><a href="">Строительство бань</a></li>
+              <li><a href="">Отделка под ключ</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="footer__right">
+          <div class="socials flex footer__socials">
+            <a href="" class="socials__item socials__item--vk"></a>
+            <a href="" class="socials__item socials__item--fb"></a>
+            <a href="" class="socials__item socials__item--ig"></a>
+            <a href="" class="socials__item socials__item--tel"></a>
+            <a href="" class="socials__item socials__item--wa"></a>
+          </div>
+          <span class="footer__btn  js-getcall">Заказать звонок</span>
+          <a href="" class="litex"><i></i><strong>ЛА`ЙТЕКС</strong> — Разработка сайта</a>
+        </div>
+      </div>
+    </div>
   </footer>
 
   <div class="popup">
@@ -335,13 +400,48 @@
       <a class="popup-close"></a>
 
       <div class="popup-block popup-block__getcall" id="popup-getcall">
-        <span class="form__title">Закажите звонок </span>
-        <span class="form__subtitle">Перезвоним в рабочее время</span>
-        <form class="popup__form call-form">
-          <input type="text" class="input popup__input" placeholder="Как Вас зовут?" required>
-          <input type="tel" class="input popup__input" placeholder="Ваш телефон" required>
-          <button type="submit" class="btn submit popup__submit"><span>Перезвонить мне</span></button>
+        <span class="form__title">Задайте нам вопрос!</span>
+        <span class="form__subtitle">Мы перезвоним в ближайшее время.</span>
+        <form class="quests__form_block">
+          <!-- Hidden Required Fields -->
+          <input type="hidden" name="project_name" value="Stolica">
+          <input type="hidden" name="admin_email" value="mail@yandex.ru">
+          <input type="hidden" name="form_subject" value="Заявка с сайта">
+          <!-- END Hidden Required Fields -->
+          <label class="label">
+            <input type="text" class="input">
+            <span class="label__placeholder">Представьтесь, пожалуйста<span>*</span></span>
+          </label>
+          <label class="label">
+            <input type="tel" class="input">
+            <span class="label__placeholder">Контактный телефон<span>*</span></span>
+          </label>
+          <label class="label">
+            <textarea class="input textarea"></textarea>
+            <span class="label__placeholder">Начните писать Ваш вопрос...</span>
+          </label>
+          <button class="submit">Отправить заявку</button>
+          <label class="check">
+            <input type="checkbox" checked>
+            <span class="check__custom"></span>
+            <span class="check__text">Я даю согласие на <a href="">обработку
+                персональных данных</a></span>
+          </label>
         </form>
+      </div>
+
+      <div class="popup-block popup-block__office" id="popup-office">
+        <span class="form__title office__title">Воспользуйтесь бесплатной услугой мобильного офиса уже сегодня!</span>
+        <span class="office__subtitle">В любое удобное для вас время, специалисты нашей компании подъедут, осуществят замер и предоставят рофессиональную консультацию.</span>
+        <span class="office__text">
+          <a href="tel:8 (800) 350-38-31">8 (800) 350-38-31</a> - Единый центр <br>
+          г. Москва - <a href="tel:8 (495) 100-00-00">8 (495) 100-00-00</a> <br>
+          г. Йошкар-Ола - <a href="tel:8 (991) 463-02-18">8 (991) 463-02-18</a>
+        </span>
+        <span class="office__text">
+          Пишите письма: <a href="mailto:stolitsa12@mail.ru">stolitsa12@mail.ru</a>
+        </span>
+        <span class="submit office__btn">Заказать звонок</span>
       </div>
 
       <div class="popup-block popup-block__success" id="popup-success">
